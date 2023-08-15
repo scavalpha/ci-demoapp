@@ -18,9 +18,9 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       
     - name: Build the new release :latest
-      run: docker build -t hosniah/my-demo-app:v2.0 .
+      run: docker build -t scavalpha/demo-app:v2.0 .
 
     - name: Push to docker hub :latest
       uses: actions-hub/docker@master
       with:
-       args: push hosniah/my-demo-app:v2.0
+       args: push scavalpha/demo-app:v2.0
