@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Login to docker hub
+    - name: Login to alpha docker hub
       uses: actions-hub/docker/login@master
       env:
        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
